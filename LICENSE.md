@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 Jonas Möller
+Copyright (c) 2014-2016 rauhkrusche, a brand of Möller IT-Consulting
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
