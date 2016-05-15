@@ -1,6 +1,6 @@
 <?php
 /**
- * "nobeer.php"
+ * "nobeer_deprecated.php"
  * Author:  Jonas Möller
  * Date:    18.05.14
  * Time:    18:10
