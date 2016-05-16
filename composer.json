@@ -1,0 +1,24 @@
+{
+  "name": "rauhkrusche/BeerPHP",
+  "description": "Beer implementation in PHP",
+  "minimum-stability": "stable",
+  "version": "1.0",
+  "time": "2016-05-16",
+  "keywords": [
+    "Beer",
+    "BeerPHP",
+    "Library"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jonas Möller",
+      "email": "jonas.moeller@rauhkrusche.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Beer": "src/"
+    }
+  }
+}
