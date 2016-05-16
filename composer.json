@@ -1,5 +1,5 @@
 {
-  "name": "rauhkrusche/BeerPHP",
+  "name": "rauhkrusche/beer-php",
   "description": "Beer implementation in PHP",
   "minimum-stability": "stable",
   "version": "1.0",
