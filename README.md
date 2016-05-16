@@ -14,7 +14,7 @@ The simplest way to install Beer.PHP is to use our [Composer package](https://pa
 ```
 {
     "require": {
-        "rauhkrusche/beer-php": "1.0*"
+        "rauhkrusche/beer-php": "0.1*"
     }
 }
 ```
