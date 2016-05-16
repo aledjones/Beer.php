@@ -1,5 +1,5 @@
 <?php
-
+include 'src/Beer/Beer.php';
 class BeerTest extends \PHPUnit_Framework_TestCase
 {
     public function test_serialization()
