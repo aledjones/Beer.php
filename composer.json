@@ -2,13 +2,13 @@
   "name": "rauhkrusche/beer-php",
   "description": "Beer implementation in PHP",
   "minimum-stability": "stable",
-  "version": "1.0",
   "homepage": "https://github.com/rauhkrusche/Beer.php",
   "time": "2016-05-16",
   "keywords": [
     "Beer",
     "BeerPHP",
-    "Library"
+    "Library",
+    "beer-php"
   ],
   "license": "MIT",
   "authors": [
