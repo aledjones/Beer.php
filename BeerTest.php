@@ -1,5 +1,4 @@
 <?php
-namespace rauhkrusche\BeerPHP;
 include "src/Beer/Beer.php";
 
 
