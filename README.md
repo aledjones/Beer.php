@@ -7,7 +7,15 @@ A [Beer](https://github.com/rauhkrusche/Beer) implemenation in PHP.
 - PHP 5.3 or higher
 
 ## Installation ##
-The simplest way to install Beer.PHP is to use our [NuGet package]
+The simplest way to install Beer.PHP is to use our [Composer package](https://packagist.org/packages/rauhkrusche/beer-php).
+
+```
+{
+    "require": {
+        "rauhkrusche/beer-php": "1.0*"
+    }
+}
+```
 
 
 ## Usage ##
