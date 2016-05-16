@@ -1,9 +1,25 @@
-# Beer.php
-_Beer.php_ is a compatible version to an old string-replacement-tool I wrote a while ago. (See Beer.py)
+Beer.PHP
+========
 
-Basically all it does is replace every character of the 26-digit alphabet with a specific amount of "BEER".
-Try it! Use it for whatever reason you have to make strings unnecessarily bigger.
+A [Beer](https://github.com/rauhkrusche/Beer) implemenation in PHP.
 
-##Planned Features
-- YAML-Documentation on BEER and a new BEER-Standard with Libraries for the most common languages
-- Twitter. Just for fun.
+## Prerequisites ##
+- PHP5.3 or higher
+
+## Installation ##
+The simplest way to install Beer.PHP is to use our [NuGet package]
+
+
+## Usage ##
+Simple example in PHP:
+
+```
+include 'src/Beer/Beer.php'
+$b = new rauhkrusche\BeerPHP\Beer;
+
+    $b->serialize('Test');
+    // Output: µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫
+
+    $b->deserialize('µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫');
+    // Output: Test
+```

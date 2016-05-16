@@ -3,6 +3,7 @@
   "description": "Beer implementation in PHP",
   "minimum-stability": "stable",
   "version": "1.0",
+  "homepage": "https://github.com/rauhkrusche/Beer.php",
   "time": "2016-05-16",
   "keywords": [
     "Beer",
@@ -13,9 +14,14 @@
   "authors": [
     {
       "name": "Jonas Möller",
-      "email": "jonas.moeller@rauhkrusche.com"
+      "email": "jonas.moeller@rauhkrusche.com",
+      "homepage": "jonasmoeller.de",
+      "role": "developer"
     }
   ],
+  "require": {
+    "php": ">=5.3.0"
+  },
   "autoload": {
     "psr-0": {
       "Beer": "src/"
