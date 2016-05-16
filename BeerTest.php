@@ -1,5 +1,6 @@
 <?php
 namespace rauhkrusche\BeerPHP;
+include "src/Beer/Beer.php";
 
 
 class BeerTest extends \PHPUnit_Framework_TestCase
