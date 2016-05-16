@@ -9,17 +9,16 @@ class BeerTest extends \PHPUnit_Framework_TestCase
         print $Beer->serialize('Test');
     }
 
-    public function test_deserialization()
+    /*public function test_deserialization()
     {
         $Beer = new rauhkrusche\BeerPHP\Beer;
         $this->expectOutputString('Test');
         print $Beer->deserialize('µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫');
-    }
+    }*/
 
     public function test_loop()
     {
         $Beer = new rauhkrusche\BeerPHP\Beer;
-        $this->expectOutputString('q.m,BEER-QMer');
-        print $Beer->deserialize($Beer->serialize('q.m,BEER-QMer'));
+        $this->assertEquals('q.m,BEER-QMer', $Beer->deserialize($Beer->serialize('q.m,BEER-QMer')));
     }
 }
