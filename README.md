@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/rauhkrusche/Beer.php.svg?branch=master)](https://travis-ci.org/rauhkrusche/Beer.php)
-[![Packagist](https://img.shields.io/packagist/v/rauhkrusche/beer-php.svg)]()
+[![Packagist](https://img.shields.io/packagist/v/rauhkrusche/beer-php.svg)](https://packagist.org/packages/rauhkrusche/beer-php)
 Beer.PHP
 ========
 
