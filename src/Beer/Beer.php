@@ -8,7 +8,7 @@ class Beer
         $input = str_replace('.', 'BEER-BEER∫', $input);
         $input = str_replace(',', 'BEER_BEER∫', $input);
 
-        for ($i = 0; $i <= count($this->alphabet); $i++) {
+        for ($i = 0; $i < count($this->alphabet); $i++) {
             if (!in_array($this->alphabet[$i], array('b', 'e', 'r'))) {
                 $input = str_replace(strtoupper($this->alphabet[$i]), $this->repeatString('∫', 'µ', $i), $input);
             }
@@ -23,7 +23,7 @@ class Beer
         $input = str_replace('BEER-BEER∫', '.', $input);
         $input = str_replace('BEER_BEER∫', ',', $input);
 
-        for ($i = count($this->alphabet) - 1; $i >= 0; $i--) {
+        for ($i = count($this->alphabet) - 1; $i > 0; $i--) {
             if (!in_array($this->alphabet[$i], array('b', 'e', 'r'))) {
                 $input = str_replace($this->repeatString('∫', 'µ', $i), strtoupper($this->alphabet[$i]), $input);
             }
