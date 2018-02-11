@@ -1,35 +1,41 @@
 [![Build Status](https://travis-ci.org/rauhkrusche/Beer.php.svg?branch=master)](https://travis-ci.org/rauhkrusche/Beer.php)
-[![Packagist](https://img.shields.io/packagist/v/rauhkrusche/beer-php.svg)](https://packagist.org/packages/rauhkrusche/beer-php)
-Beer.PHP
+[![Packagist](https://img.shields.io/packagist/v/rauhkrusche/beer-php.svg)](https://packagist.org/packages/rauhkrusche/beer-php)  
+
+BeerPHP  
 ========
 
-A [Beer](https://github.com/rauhkrusche/Beer) implemenation in PHP.
+A [Beer](https://github.com/rauhkrusche/Beer) implementation in PHP.
 
 ## Prerequisites ##
-- PHP 5.6 or higher
+- PHP 7.0 or higher
 
 ## Installation ##
-The simplest way to install Beer.PHP is to use our [Composer package](https://packagist.org/packages/rauhkrusche/beer-php).
+The simplest way to install BeerPHP is to use our [Composer package](https://packagist.org/packages/rauhkrusche/beer-php).
 
 ```
 {
+    ...
+    
     "require": {
-        "rauhkrusche/beer-php": "0.1*"
+        "rauhkrusche/beer-php": "0.2*"
     }
+    
+    ...
 }
 ```
 
+If you are unable to use composer for your project, just download the [latest release](https://github.com/rauhkrusche/Beer.php/releases/latest) and extract its content into your project.  
 
 ## Usage ##
-Simple example in PHP:
+Default usage:
 
 ```
-include 'src/Beer/Beer.php'
-$b = new rauhkrusche\BeerPHP\Beer;
+require 'vendor/autoload.php';
+$b = new \rauhkrusche\BeerPHP\Beer();
 
-    $b->serialize('Test');
-    // Output: µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫
-
-    $b->deserialize('µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫');
-    // Output: Test
+    print $b->serialize('tux') . "\n";
+    // Output = BEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫
+    
+    print $b->deserialize('BEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫');
+    // Output = tux
 ```
