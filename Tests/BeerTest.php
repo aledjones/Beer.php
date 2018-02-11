@@ -9,7 +9,7 @@ class BeerTest extends TestCase
     public function testSerialize()
     {
         $Beer = new Beer();
-        $this->expectOutputString('µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫');
+        $this->expectOutputString('🍻🍻🍻🍻🍻∫🍺🍺🍺∫🍺🍺🍺🍺🍺🍺🍺🍺🍺🍺🍺🍺∫🍺🍺🍺🍺🍺∫');
         print $Beer->serialize('Test');
     }
 
@@ -17,7 +17,7 @@ class BeerTest extends TestCase
     {
         $Beer = new Beer();
         $this->expectOutputString('Test');
-        print $Beer->deserialize('µµµµµ∫BEERBEERBEER∫BEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEERBEER∫BEERBEERBEERBEERBEER∫');
+        print $Beer->deserialize('🍻🍻🍻🍻🍻∫🍺🍺🍺∫🍺🍺🍺🍺🍺🍺🍺🍺🍺🍺🍺🍺∫🍺🍺🍺🍺🍺∫');
     }
 
     public function testLoop()

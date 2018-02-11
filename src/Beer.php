@@ -7,14 +7,14 @@ class Beer
 
     public function serialize($input)
     {
-        $input = str_replace('.', 'BEER-BEER∫', $input);
-        $input = str_replace(',', 'BEER_BEER∫', $input);
+        $input = str_replace('.', '🍻-🍻∫', $input);
+        $input = str_replace(',', '🍻_🍻∫', $input);
 
         for ($i = 0; $i < count($this->alphabet); $i++) {
             if (!in_array($this->alphabet[$i], array('b', 'e', 'r'))) {
-                $input = str_replace(strtoupper($this->alphabet[$i]), $this->repeatString('∫', 'µ', $i), $input);
+                $input = str_replace(strtoupper($this->alphabet[$i]), $this->repeatString('∫', '🍻', $i), $input);
             }
-            $input = str_replace($this->alphabet[$i], $this->repeatString('∫', 'BEER', $i), $input);
+            $input = str_replace($this->alphabet[$i], $this->repeatString('∫', '🍺', $i), $input);
 
         }
         return $input;
@@ -31,14 +31,14 @@ class Beer
 
     public function deserialize($input)
     {
-        $input = str_replace('BEER-BEER∫', '.', $input);
-        $input = str_replace('BEER_BEER∫', ',', $input);
+        $input = str_replace('🍻-🍻∫', '.', $input);
+        $input = str_replace('🍻_🍻∫', ',', $input);
 
         for ($i = count($this->alphabet) - 1; $i >= 0; $i--) {
             if (!in_array($this->alphabet[$i], array('b', 'e', 'r'))) {
-                $input = str_replace($this->repeatString('∫', 'µ', $i), strtoupper($this->alphabet[$i]), $input);
+                $input = str_replace($this->repeatString('∫', '🍻', $i), strtoupper($this->alphabet[$i]), $input);
             }
-            $input = str_replace($this->repeatString('∫', 'BEER', $i), $this->alphabet[$i], $input);
+            $input = str_replace($this->repeatString('∫', '🍺', $i), $this->alphabet[$i], $input);
 
         }
         return $input;
