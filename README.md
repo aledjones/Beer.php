@@ -17,7 +17,7 @@ The simplest way to install BeerPHP is to use our [Composer package](https://pac
     ...
     
     "require": {
-        "rauhkrusche/beer-php": "0.2*"
+        "rauhkrusche/beer-php": "0.2.*"
     }
     
     ...
