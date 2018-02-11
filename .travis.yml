@@ -9,6 +9,6 @@ install:
   - composer install --no-interaction --ansi
 
 script:
-  - phpunit BeerTest.php
+  - phpunit src/BeerTest.php
 
 sudo: false
