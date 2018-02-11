@@ -1,8 +1,10 @@
 <?php
+
 namespace rauhkrusche\BeerPHP;
 class Beer
 {
     private $alphabet = array('q', 'w', 'e', 'r', 't', 'z', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'y', 'x', 'c', 'v', 'b', 'n', 'm');
+
     public function serialize($input)
     {
         $input = str_replace('.', 'BEER-BEER∫', $input);
@@ -18,6 +20,15 @@ class Beer
         return $input;
     }
 
+    private function repeatString($finalChar, $stringToRepeat, $count)
+    {
+        $result = $stringToRepeat;
+        for ($i = 0; $i < $count; $i++) {
+            $result .= $stringToRepeat;
+        }
+        return $result . $finalChar;
+    }
+
     public function deserialize($input)
     {
         $input = str_replace('BEER-BEER∫', '.', $input);
@@ -31,14 +42,5 @@ class Beer
 
         }
         return $input;
-    }
-
-    private function repeatString($finalChar, $stringToRepeat, $count)
-    {
-        $result = $stringToRepeat;
-        for ($i = 0; $i < $count; $i++) {
-            $result .= $stringToRepeat;
-        }
-        return $result . $finalChar;
     }
 }
